@@ -8,7 +8,7 @@ import "../styles/NavBar.css"
 
 export default function NavBarComponent() {
   return (
-    <Navbar expand="md" fixed="top" className="custom-navbar">
+    <Navbar expand="md" fixed="top" className="navbar">
       <Container>
         <Navbar.Brand href="#">Emirkan Burak Yılmaz</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbar-nav" />

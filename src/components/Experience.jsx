@@ -3,7 +3,9 @@ import '../styles/Experience.css'
 export default function Experience() {
   return (
     <section id="experience">
-      <h2>Experience</h2>
+      <div className="section-header">
+        <h2>Experience</h2>
+      </div>
       <div className="experience-item">
         <h3>Research Intern @ ABC University</h3>
         <p className="date">Jun 2024 – Sep 2024</p>

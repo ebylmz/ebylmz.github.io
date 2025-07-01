@@ -3,7 +3,9 @@ import '../styles/Projects.css'
 export default function Projects() {
   return (
     <section id="projects">
-      <h2>Projects</h2>
+      <div className="section-header">
+        <h2>Projects</h2>
+      </div>
       <div className="project-grid">
         <div className="project-card">
           <h3>Fast Neural Style Transfer</h3>
