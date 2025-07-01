@@ -1,0 +1,13 @@
+.experience-item {
+  margin-bottom: 2rem;
+}
+
+.experience-item .date {
+  font-size: 0.9rem;
+  color: var(--gray);
+}
+
+.experience-item ul {
+  list-style: disc inside;
+  margin-top: 0.5rem;
+}

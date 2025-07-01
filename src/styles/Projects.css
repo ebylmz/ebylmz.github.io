@@ -1,0 +1,22 @@
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.project-card {
+  padding: 1rem;
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-tech {
+  font-size: 0.85rem;
+  color: var(--gray);
+}
