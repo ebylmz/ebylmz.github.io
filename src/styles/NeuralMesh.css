@@ -1,0 +1,13 @@
+#neural-mesh {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  z-index: 2;
+  position: relative;
+  pointer-events: none;
+  opacity: 0.5;
+}
+canvas {
+  max-width: 100%;
+  height: auto;
+}

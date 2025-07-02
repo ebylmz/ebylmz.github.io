@@ -1,11 +1,13 @@
 import { TypeAnimation } from 'react-type-animation';
 import EmailRoundedIcon from "@mui/icons-material/EmailRounded";
 import FadeInSection from "./FadeInSection";
+import NeuralMesh from "./NeuralMesh";
 import "../styles/Intro.css";
 
 export default function Intro() {
   return (
     <section id="intro">
+      <NeuralMesh />
       <h1 className="intro-title">
         <TypeAnimation
           sequence={['hi, Emirkan here.', 1000]}
