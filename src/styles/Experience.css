@@ -1,13 +1,27 @@
-.experience-item {
-  margin-bottom: 2rem;
+.joblist-job-title {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 0.2rem;
+  color: var(--text, #1a1a1a);
 }
 
-.experience-item .date {
+.joblist-job-company {
+  color: var(--primary, #007acc);
+}
+
+.joblist-duration {
   font-size: 0.9rem;
-  color: var(--gray);
+  color: var(--gray, #555);
+  margin-bottom: 1rem;
 }
 
-.experience-item ul {
-  list-style: disc inside;
-  margin-top: 0.5rem;
+.job-description {
+  padding-left: 1.2rem;
+  margin: 0;
+}
+
+.job-description li {
+  margin-bottom: 0.8rem;
+  line-height: 1.6;
+  color: var(--text, #1a1a1a);
 }

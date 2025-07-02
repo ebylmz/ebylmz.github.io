@@ -24,18 +24,14 @@
   line-height: 1.6;
 }
 
-.tech-list {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(140px, 1fr));
-  gap: 0.25rem 1.5rem;
+.tech-stack {
   padding-left: 1rem;
   margin-top: 1rem;
-  list-style-position: inside;
 }
 
-.tech-list li {
+.tech-stack li {
   list-style-type: disc;
-  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
   color: var(--gray, #444);
 }
 
@@ -53,4 +49,9 @@
   object-fit: cover;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.about-image img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
 }

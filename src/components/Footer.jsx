@@ -1,9 +1,12 @@
 import '../styles/Footer.css'
+import FadeInSection from './FadeInSection'
 
 export default function Footer() {
   return (
     <footer>
-      <p>&copy; 2025 Emirkan Burak Yilmaz</p>
+      <FadeInSection>
+        <p>&copy; 2025 Emirkan Burak Yilmaz</p>
+      </FadeInSection>
     </footer>
   )
 }
