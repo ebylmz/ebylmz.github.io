@@ -37,16 +37,16 @@ export default function About() {
             {paragraphOne}
             {paragraphTwo}
             <p>Here are some technologies I’ve been working with recently:</p>
-            <ul className="tech-stack">
+            <div className="tech-stack">
               {techStack.map((tech, i) => (
                 <FadeInSection key={i} delay={`${i + 1}00ms`}>
-                  <li>{tech}</li>
+                  <div className="tech-item">{tech}</div>
                 </FadeInSection>
               ))}
-            </ul>
+            </div>
           </div>
           <div className="about-image">
-            <img src={profileImg} alt="Emirkan Burak Yilmaz" />
+            <img src={profileImg} alt="Emirkan Burak Yılmaz" />
           </div>
         </div>
       </FadeInSection>

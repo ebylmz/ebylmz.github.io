@@ -1,0 +1,28 @@
+#education {
+  padding: 5rem 1.5rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.education-entry {
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+.education-entry h3 {
+  font-size: 1.2rem;
+  color: var(--text, #1a1a1a);
+  margin-bottom: 0.2rem;
+}
+
+.edu-meta {
+  font-size: 0.95rem;
+  color: var(--primary, #007acc);
+  margin-bottom: 0.4rem;
+}
+
+.edu-details {
+  font-size: 0.95rem;
+  color: var(--gray, #555);
+  line-height: 1.5;
+}
