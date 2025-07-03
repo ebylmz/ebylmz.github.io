@@ -7,16 +7,13 @@ export default function About() {
     'Python',
     'PyTorch',
     'TensorFlow',
-    'Scikit-learn',
     'SQL',
     'React.js',
-    'Node.js',
-    'C++'
   ]
 
   const paragraphOne = (
     <p>
-      I’m a computer science student passionate about <b>machine learning</b>, <b>AI</b>, and data-driven software development. I enjoy solving real-world problems by building intelligent, scalable systems.
+      I'm a <b>Computer Engineering graduate</b> and current <b>Master's candidate</b> specializing in AI, with hands-on experience in both industry and research. My work focuses on <b>applied machine learning</b>, particularly in <b>computer vision</b>.
     </p>
   )
 

@@ -3,18 +3,26 @@ import FadeInSection from './FadeInSection'
 
 export default function Education() {
   const educationData = [
-    {
-      degree: 'B.Sc. in Computer Science',
-      institution: 'Your University Name',
-      date: '2020 – 2025',
-      details: 'Specialization in AI & Machine Learning. Relevant coursework: Deep Learning, Computer Vision, Software Engineering.'
-    },
-    {
-      degree: 'Erasmus Exchange Program in AI',
-      institution: 'Technical University of Munich',
-      date: 'Spring 2023',
-      details: 'Focused on computer vision and applied machine learning.'
-    }
+      {
+        degree: "Master's in Computer Engineering",
+        institution: 'Gebze Technical University',
+        date: 'Feb 2025 - Present',
+        location: 'Kocaeli, Gebze',
+        details: [
+          'Cumulative GPA: 4.00/4.00',
+          // 'Relevant Coursework: Deep Learning, Statistical Data Analysis'
+        ]
+      },
+      {
+        degree: "Bachelor's in Computer Engineering",
+        institution: 'Gebze Technical University',
+        date: 'Sep 2019 - Jun 2024',
+        location: 'Kocaeli, Gebze',
+        details: [
+          'Cumulative GPA: 3.51/4.00 (High Honors)',
+          // 'Relevant Coursework: Natural Language Processing, Machine Learning, Augmented Reality, Computer Vision'
+        ]
+      }
   ]
 
   return (

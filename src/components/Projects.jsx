@@ -1,40 +1,47 @@
 import '../styles/Projects.css'
 import GitHubIcon from '@mui/icons-material/GitHub'
 import LaunchIcon from '@mui/icons-material/Launch'
+import FolderOpenRoundedIcon from '@mui/icons-material/FolderOpenRounded'
 import FadeInSection from './FadeInSection'
 
 const projects = [
   {
     title: 'Fast Neural Style Transfer',
-    description: 'Real-time image stylization using perceptual loss and a feedforward network.',
-    tech: 'PyTorch, Gradio, Python',
-    image: '/assets/style_transfer.jpg',
-    github: 'https://github.com/yourusername/style-transfer',
-    live: 'https://style-transfer-demo.com'
+    description: 'Feedforward Neural Style Transfer using perceptual loss.',
+    tech: 'PyTorch',
+    github: 'https://github.com/ebylmz/fast-neural-style-transfer',
+    live: 'https://your-demo-link.com'
   },
   {
-    title: 'AR Application',
-    description: 'Marker-based AR experience with Unity and Vuforia.',
-    tech: 'Unity, Vuforia, C#',
-    image: '/assets/nomansland.png',
-    github: 'https://github.com/yourusername/ar-app'
+    title: 'Architectural Style Classification',
+    description: 'CNN-based classification of Turkish architects.',
+    tech: 'PyTorch, U-Net, EfficientNet',
+    github: 'https://github.com/ebylmz/arch-style-classification'
   },
   {
-    title: 'CAD Retrieval Pipeline',
-    description: '3D model retrieval from noisy factory inputs.',
-    tech: 'OpenCV, PyTorch, Point Clouds',
-    image: '/assets/gtu_cad.png',
-    github: 'https://github.com/yourusername/cad-matching',
-    live: ''
+    title: 'GTUCAD',
+    description: 'A CAD Library for drawing and manipulating 2D shapes.',
+    tech: 'C, PostScript',
+    github: 'https://github.com/ebylmz/GTUCAD'
+  },
+  {
+    title: 'Interactive AR Application',
+    description: 'Unity/Vuforia AR experience with interactive scenarios.',
+    tech: 'C#, Unity, Vuforia',
+    github: 'https://github.com/ebylmz/interactive-ar-experience'
+  },
+  {
+    title: 'Turkish N-Gram Language Model',
+    description: 'Syllable-based n-gram models with Good-Turing smoothing.',
+    tech: 'Python, NLTK',
+    github: 'https://github.com/ebylmz/turkish-ngram-model'
   },
   {
     title: 'GTU Assignments',
-    description: '3D model retrieval from noisy factory inputs.',
-    tech: 'OpenCV, PyTorch, Point Clouds',
-    image: '/assets/gtu_cad.png',
-    github: 'https://github.com/yourusername/cad-matching',
-    live: ''
-  },
+    description: 'Collection of course assignments & notes at GTU.',
+    tech: 'C, C++, Java, Python, HTML, JS',
+    github: 'https://github.com/ebylmz/gtu-cse'
+  }
 ]
 
 export default function Projects() {
@@ -43,38 +50,32 @@ export default function Projects() {
       <div className="section-header">
         <h2>/ projects</h2>
       </div>
-      <div className="project-grid">
-        {projects.map((project, i) => (
+      <ul className="projects-grid">
+        {projects.map((proj, i) => (
           <FadeInSection key={i} delay={`${i * 100}ms`}>
-            <div className="project-card">
-              <div className="project-image-wrapper">
-                {project.live ? (
-                  <a href={project.live} target="_blank" rel="noopener noreferrer">
-                    <img src={project.image} alt={project.title} className="project-img" />
-                  </a>
-                ) : (
-                  <img src={project.image} alt={project.title} className="project-img" />
-                )}
-              </div>
-              <div className="project-info">
-                <h3 className="project-title">{project.title}</h3>
-                <p className="project-description">{project.description}</p>
-                <p className="project-tech">{project.tech}</p>
-                <div className="project-links">
-                  <a href={project.github} target="_blank" rel="noopener noreferrer" title="GitHub">
+            <li className="projects-card">
+              <div className="card-header">
+                <div className="folder-icon">
+                  <FolderOpenRoundedIcon style={{ fontSize: 28 }} />
+                </div>
+                <div className="card-links">
+                  <a href={proj.github} target="_blank" rel="noopener noreferrer" className="github-icon">
                     <GitHubIcon />
                   </a>
-                  {project.live && (
-                    <a href={project.live} target="_blank" rel="noopener noreferrer" title="Live Demo">
+                  {proj.live && (
+                    <a href={proj.live} target="_blank" rel="noopener noreferrer" className="open-icon">
                       <LaunchIcon />
                     </a>
                   )}
                 </div>
               </div>
-            </div>
+              <div className="card-title">{proj.title}</div>
+              <div className="card-desc">{proj.description}</div>
+              <div className="card-tech">{proj.tech}</div>
+            </li>
           </FadeInSection>
         ))}
-      </div>
+      </ul>
     </section>
   )
 }

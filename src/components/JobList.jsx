@@ -6,34 +6,41 @@ import FadeInSection from './FadeInSection'
 import '../styles/Experience.css'
 
 const experienceData = {
-  'Company A': {
-    jobTitle: 'Machine Learning Intern @',
-    duration: 'Jun 2023 – Sep 2023',
-    desc: [
-      'Worked on neural style transfer models using PyTorch.',
-      'Integrated the model into a Gradio web UI.',
-      'Published results on arXiv.'
-    ]
-  },
-  'Company B': {
-    jobTitle: 'Data Science Intern @',
-    duration: 'Jan 2023 – Apr 2023',
-    desc: [
-      'Developed dashboards using Streamlit.',
-      'Analyzed customer churn using XGBoost.',
-      'Collaborated with product team to deploy tools.'
-    ]
-  },
-  'Research Lab C': {
-    jobTitle: 'Undergraduate Researcher @',
-    duration: 'Sep 2022 – Dec 2022',
-    desc: [
-      'Explored 3D vision techniques for CAD retrieval.',
-      'Processed noisy depth data using point cloud denoising.',
-      'Wrote a report for internal research use.'
-    ]
-  }
+  'PhiTech Bioinformatics': [
+    {
+      jobTitle: 'Machine Learning Engineer @',
+      duration: 'Feb 2024 – Apr 2025',
+      location: 'Kocaeli, Gebze',
+      desc: [
+        'Managed medical data collection and preprocessing workflows.',
+        'Developed Graph Neural Network (GNN) models for phenotype-driven gene and disease prioritization, achieving a Top-10 accuracy of 60%.',
+        'Performed hyperparameter tuning and model evaluation using Weights & Biases.'
+      ]
+    },
+    {
+      jobTitle: 'Software Engineer Intern @',
+      duration: 'Jun 2022 – Sep 2022',
+      location: 'Kocaeli, Gebze',
+      desc: [
+        'Developed and optimized a full-stack web application using Spring Boot, Angular Material, and MySQL.',
+        'Improved backend logic and optimized MySQL queries to increase performance and maintain data integrity.'
+      ]
+    }
+  ],
+  'Maastricht University Institute of Data Science': [
+    {
+      jobTitle: 'Data Science Intern @',
+      duration: 'Jun 2023 – Sep 2023',
+      location: 'Maastricht, Netherlands',
+      desc: [
+        "Extracted and structured medical data from FDA's DailyMed SPL drug labels to build a specialized NER dataset.",
+        'Trained spaCy-based Named Entity Recognition models, achieving an F1-score of 0.61.',
+        'Benchmarked model performance against large language models (LLMs) for efficiency and accuracy.'
+      ]
+    }
+  ]
 }
+
 
 export default function JobList() {
   const [value, setValue] = useState(0)
@@ -61,27 +68,29 @@ export default function JobList() {
         ))}
       </Tabs>
 
-      {companies.map((company, i) => {
-        const { jobTitle, duration, desc } = experienceData[company]
-        return (
-          value === i && (
-            <Box key={company} sx={{ padding: '1rem', flex: 1 }}>
+    {companies.map((company, i) => (
+      value === i && (
+        <Box key={company} sx={{ padding: '1rem', flex: 1 }}>
+          {experienceData[company].map((role, idx) => (
+            <div key={idx} className="job-entry">
               <div className="joblist-job-title">
-                {jobTitle}{' '}
-                <span className="joblist-job-company">{company}</span>
+                {role.jobTitle}
+                <span className="joblist-job-company"> {company}</span>
               </div>
-              <div className="joblist-duration">{duration}</div>
+              <div className="joblist-duration">{role.duration}</div>
               <ul className="job-description">
-                {desc.map((point, j) => (
+                {role.desc.map((point, j) => (
                   <FadeInSection key={j} delay={`${j * 100}ms`}>
                     <li>{point}</li>
                   </FadeInSection>
                 ))}
               </ul>
-            </Box>
-          )
-        )
-      })}
+            </div>
+          ))}
+        </Box>
+      )
+    ))}
+
     </Box>
   )
 }

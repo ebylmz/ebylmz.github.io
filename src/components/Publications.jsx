@@ -4,9 +4,9 @@ import FadeInSection from './FadeInSection'
 export default function Publications() {
   const publications = [
     {
-      title: 'A Neural Approach to Perceptual Image Translation',
-      venue: 'arXiv, 2025',
-      link: 'https://arxiv.org/abs/your-paper-id'
+      title: 'Architectural Works of the Early Republic Period from an Artificial Intelligence Perspective',
+      venue: 'IEEE SIU 2024',
+      link: 'https://ieeexplore.ieee.org/abstract/document/10600693/'
     }
   ]
 

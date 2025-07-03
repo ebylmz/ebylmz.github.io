@@ -16,8 +16,10 @@ export default function NavBarComponent() {
           <Nav className="me-auto">
             <Nav.Link href="#intro">Home</Nav.Link>
             <Nav.Link href="#about">About</Nav.Link>
+            <Nav.Link href="#education">Education</Nav.Link>
             <Nav.Link href="#experience">Experience</Nav.Link>
             <Nav.Link href="#projects">Projects</Nav.Link>
+            <Nav.Link href="#publications">Publications</Nav.Link>
           </Nav>
           <Nav>
             <Nav.Link href="mailto:emirkan.b.yilmaz@gmail.com" title="Email">
