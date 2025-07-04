@@ -18,10 +18,12 @@ export default function Intro() {
         />
       </h1>
       <FadeInSection>
-        <h2 className="intro-subtitle">I create data-driven tools.</h2>
+        <h2 className="intro-subtitle">
+          I love solving real-world problems.
+        </h2>
 
         <p className="intro-desc">
-          I’m a computer science student interested in AI, machine learning, and software engineering. I enjoy building intelligent systems that solve real-world problems.
+          I’m a computer engineer based in Istanbul, Turkey, with a deep passion for AI. My focus lies in developing innovative solutions especially in the field of computer vision.
         </p>
 
         <a href="mailto:emirkan.b.yilmaz@gmail.com" className="intro-contact">
