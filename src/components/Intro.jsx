@@ -23,7 +23,7 @@ export default function Intro() {
         </h2>
 
         <p className="intro-desc">
-          I’m a computer engineer based in Istanbul, Turkey, with a deep passion for AI. My focus lies in developing innovative solutions especially in the field of computer vision.
+          I'm a computer engineer based in Istanbul, Turkey, with a deep passion for AI. My focus lies in developing innovative solutions especially in the field of computer vision.
         </p>
 
         <a href="mailto:emirkan.b.yilmaz@gmail.com" className="intro-contact">

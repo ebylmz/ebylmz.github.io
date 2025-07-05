@@ -15,13 +15,13 @@ export default function About() {
     <p>
       I'm a <b>Computer Engineering graduate</b> and current <b>Master's candidate</b> with a focus on artificial intelligence. 
       My work centers around <b>machine learning</b> and <b>computer vision</b>, blending academic research with practical, real-world applications.
-      I’m driven by the challenge of designing intelligent systems that are both impactful and technically robust.
+      I'm driven by the challenge of designing intelligent systems that are both impactful and technically robust.
     </p>
   )
 
   const paragraphTwo = (
     <p>
-      At the moment, I’m conducting research on <b>6-DoF pose estimation</b> for my master’s thesis—a project I find deeply exciting due to its relevance to <b>3D vision, robotics,</b> and <b>autonomous systems</b>. 
+      At the moment, I'm conducting research on <b>6-DoF pose estimation</b> for my master's thesis—a project I find deeply exciting due to its relevance to <b>3D vision, robotics,</b> and <b>autonomous systems</b>. 
       Outside of AI, I also enjoy working on <b>full-stack web development</b> and crafting data-driven tools that are intuitive and efficient.
     </p>
   )
@@ -36,7 +36,7 @@ export default function About() {
           <div className="about-description">
             {paragraphOne}
             {paragraphTwo}
-            <p>Here are some technologies I’ve been working with recently:</p>
+            <p>Here are some technologies I've been working with recently:</p>
             <div className="tech-stack">
               {techStack.map((tech, i) => (
                 <FadeInSection key={i} delay={`${i + 1}00ms`}>
