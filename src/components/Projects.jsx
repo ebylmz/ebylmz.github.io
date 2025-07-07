@@ -10,7 +10,7 @@ const projects = [
     description: 'Feedforward Neural Style Transfer using perceptual loss.',
     tech: 'PyTorch',
     github: 'https://github.com/ebylmz/fast-neural-style-transfer',
-    live: 'https://your-demo-link.com'
+    live: 'https://huggingface.co/spaces/ebylmz/fast-neural-style-transfer'
   },
   {
     title: 'Architectural Style Classification',
