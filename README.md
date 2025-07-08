@@ -5,6 +5,11 @@ Welcome to my personal portfolio website! This site showcases my background, pro
 🔗 **Live Demo**: [ebylmz.github.io](https://ebylmz.github.io)
 
 
+<div align="center">
+    <img src="public/assets/ui.png" width="800"/>
+</div>
+
+
 
 ## 🛠️ Built With
 
