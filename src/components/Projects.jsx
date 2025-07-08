@@ -8,14 +8,14 @@ const projects = [
   {
     title: 'Fast Neural Style Transfer',
     description: 'Feedforward Neural Style Transfer using perceptual loss.',
-    tech: 'PyTorch',
+    tech: 'Python, PyTorch',
     github: 'https://github.com/ebylmz/fast-neural-style-transfer',
     live: 'https://huggingface.co/spaces/ebylmz/fast-neural-style-transfer'
   },
   {
     title: 'Architectural Style Classification',
     description: 'CNN-based classification of Turkish architects.',
-    tech: 'PyTorch, U-Net, EfficientNet',
+    tech: 'Python, TensorFlow, Keras, scikit-learn',
     github: 'https://github.com/ebylmz/arch-style-classification'
   },
   {
@@ -26,7 +26,7 @@ const projects = [
   },
   {
     title: 'Interactive AR Application',
-    description: 'Unity/Vuforia AR experience with interactive scenarios.',
+    description: 'Interactive AR experiences, featuring dynamic scenarios and real-world object interactions.',
     tech: 'C#, Unity, Vuforia',
     github: 'https://github.com/ebylmz/interactive-ar-experience'
   },
@@ -38,7 +38,7 @@ const projects = [
   },
   {
     title: 'GTU Assignments',
-    description: 'Collection of course assignments & notes at GTU.',
+    description: 'A collection of my bachelor\'s degree assignments and projects at Gebze Technical University.',
     tech: 'C, C++, Java, Python, HTML, JS',
     github: 'https://github.com/ebylmz/gtu-cse'
   }
