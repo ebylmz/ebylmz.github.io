@@ -5,8 +5,6 @@
   text-align: center;
   padding: 4rem 1rem;
   min-height: 100vh;
-  background-color: var(--background, #fff);
-  color: var(--text, #1a1a1a);
 }
 
 .intro-title {
@@ -16,28 +14,28 @@
 }
 
 .intro-name {
-  color: var(--primary, #007acc);
+  color: var(--primary);
 }
 
 .intro-subtitle {
   font-size: 1.8rem;
   font-weight: 400;
   margin-bottom: 1rem;
-  color: var(--gray, #666);
+  color: var(--gray);
 }
 
 .intro-desc {
   font-size: 1.1rem;
   max-width: 600px;
   margin-bottom: 2rem;
-  color: var(--gray, #666);
+  color: var(--gray);
 }
 
 .intro-contact {
   font-size: 1.2rem;
   font-weight: 500;
-  color: var(--primary, #007acc);
-  border: 1px solid var(--primary, #007acc);
+  color: var(--primary);
+  border: 1px solid var(--primary);
   padding: 1rem 1.5rem;
   border-radius: 4px;
   text-decoration: none;

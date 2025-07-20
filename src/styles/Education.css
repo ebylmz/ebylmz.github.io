@@ -10,18 +10,18 @@
 
 .education-entry h3 {
   font-size: 1.2rem;
-  color: var(--text, #1a1a1a);
+  color: var(--text);
   margin-bottom: 0.2rem;
 }
 
 .edu-meta {
   font-size: 0.95rem;
-  color: var(--primary, #007acc);
+  color: var(--primary);
   margin-bottom: 0.4rem;
 }
 
 .edu-details {
   font-size: 0.95rem;
-  color: var(--gray, #555);
+  color: var(--gray);
   line-height: 1.5;
 }

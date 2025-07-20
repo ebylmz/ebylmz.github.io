@@ -18,7 +18,7 @@
 
 .about-description p {
   font-size: 1rem;
-  color: var(--text, #1a1a1a);
+  color: var(--text);
   margin-bottom: 1rem;
   line-height: 1.6;
   text-align: justify;
@@ -33,7 +33,7 @@
 
 .tech-item {
   font-size: 0.95rem;
-  color: var(--gray, #444);
+  color: var(--gray);
   position: relative;
   padding-left: 1.2rem;
 }
@@ -42,7 +42,7 @@
   content: '▹';
   position: absolute;
   left: 0;
-  color: var(--primary, #007acc);
+  color: var(--primary);
 }
 
 .about-image {

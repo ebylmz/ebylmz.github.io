@@ -13,9 +13,7 @@ export default function About() {
 
   const paragraphOne = (
     <p>
-      I'm a <b>Computer Engineering graduate</b> and current <b>Master's candidate</b> with a focus on artificial intelligence. 
-      My work centers around <b>machine learning</b> and <b>computer vision</b>, blending academic research with practical, real-world applications.
-      I'm driven by the challenge of designing intelligent systems that are both impactful and technically robust.
+      I'm a machine learning engineer and current Master's student in Computer Science, specializing in <b>3D vision</b> and <b>spatial intelligence</b>.
     </p>
   )
 

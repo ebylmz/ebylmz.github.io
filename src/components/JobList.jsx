@@ -10,22 +10,24 @@ const experienceData = {
     {
       jobTitle: 'Machine Learning Engineer @',
       duration: 'Feb 2024 – Apr 2025',
-      location: 'Kocaeli, Gebze',
+      location: 'Kocaeli, Turkey',
       desc: [
         'Managed medical data collection and preprocessing workflows.',
         'Developed Graph Neural Network (GNN) models for phenotype-driven gene and disease prioritization, achieving a Top-10 accuracy of 60%.',
         'Performed hyperparameter tuning and model evaluation using Weights & Biases.'
       ]
     },
+    /*
     {
       jobTitle: 'Software Engineer Intern @',
       duration: 'Jun 2022 – Sep 2022',
-      location: 'Kocaeli, Gebze',
+      location: 'Kocaeli, Turkey',
       desc: [
         'Developed and optimized a full-stack web application using Spring Boot, Angular Material, and MySQL.',
         'Improved backend logic and optimized MySQL queries to increase performance and maintain data integrity.'
       ]
     }
+    */
   ],
   'Maastricht University Institute of Data Science': [
     {
@@ -34,8 +36,19 @@ const experienceData = {
       location: 'Maastricht, Netherlands',
       desc: [
         "Extracted and structured medical data from FDA's DailyMed SPL drug labels to build a specialized NER dataset.",
-        'Trained spaCy-based Named Entity Recognition models, achieving an F1-score of 0.61.',
-        'Benchmarked model performance against large language models (LLMs) for efficiency and accuracy.'
+        "Trained spaCy-based Named Entity Recognition models, achieving an F1-score of 0.61.",
+        "Benchmarked model performance against large language models (LLMs) for efficiency and accuracy."
+      ]
+    }
+  ],
+  'Gebze Technical University': [
+    {
+      jobTitle: 'Teaching Assistant @',
+      duration: 'Mar 2022 – Jul 2022',
+      location: 'Kocaeli, Turkey',
+      desc: [
+        "Assisted students in understanding core programming concepts and completing C language laboratory assignments.",
+        "Provided one-on-one support and troubleshooting during lab sessions, helping students debug and improve their code."
       ]
     }
   ]
@@ -55,7 +68,7 @@ export default function JobList() {
         onChange={(e, newValue) => setValue(newValue)}
         variant="scrollable"
         sx={{
-          borderRight: isSmallScreen ? 'none' : '1px solid #ddd',
+          borderRight: isSmallScreen ? 'none' : '1px solid var(--background)',
           minWidth: isSmallScreen ? '100%' : '180px'
         }}
       >
@@ -63,7 +76,7 @@ export default function JobList() {
           <Tab
             key={company}
             label={isSmallScreen ? `0${i}.` : company}
-            sx={{ alignItems: 'flex-start', textTransform: 'none' }}
+            sx={{ alignItems: 'flex-start', textTransform: 'none', color: 'var(--text)'}}
           />
         ))}
       </Tabs>

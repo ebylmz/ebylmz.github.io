@@ -6,7 +6,7 @@
 .publication-list {
   list-style: disc inside;
   font-size: 1rem;
-  color: var(--text, #1a1a1a);
+  color: var(--text);
 }
 
 .publication-list li {
@@ -15,7 +15,7 @@
 
 .publication-list a {
   text-decoration: none;
-  color: var(--primary, #007acc);
+  color: var(--primary);
   font-weight: 500;
 }
 
@@ -25,5 +25,5 @@
 
 .venue {
   font-size: 0.9rem;
-  color: var(--gray, #555);
+  color: var(--gray);
 }

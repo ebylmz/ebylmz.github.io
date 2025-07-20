@@ -96,14 +96,14 @@ const sketch = (p5) => {
     for (let i = 0; i < pathIndex; i++) {
       const a = nodes[activePath[i]]
       const b = nodes[activePath[i + 1]]
-      if (b) drawEdge(a, b, '#00c896', 255, 2.5)
+      if (b) drawEdge(a, b, '#007acc', 255, 2.5)
     }
 
     // Draw nodes
     for (let i = 0; i < nodes.length; i++) {
       const isActive = activePath.slice(0, pathIndex + 1).includes(i)
       p5.noStroke()
-      p5.fill(isActive ? '#00b894' : '#ccc')
+      p5.fill(isActive ? '#007acc' : '#ccc')
       p5.circle(nodes[i].x, nodes[i].y, nodes[i].size)
     }
 

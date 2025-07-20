@@ -1,6 +1,6 @@
 footer {
   text-align: center;
   font-size: 0.9rem;
-  color: var(--gray, #888);
+  color: var(--gray);
   margin-top: 4rem;
 }

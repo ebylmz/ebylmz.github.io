@@ -8,16 +8,16 @@
   font-size: 1.1rem;
   font-weight: 500;
   margin-bottom: 0.2rem;
-  color: var(--text, #1a1a1a);
+  color: var(--text);
 }
 
 .joblist-job-company {
-  color: var(--primary, #007acc);
+  color: var(--primary);
 }
 
 .joblist-duration {
   font-size: 0.9rem;
-  color: var(--gray, #555);
+  color: var(--gray);
   margin-bottom: 1rem;
 }
 
@@ -25,11 +25,10 @@
   padding-left: 1.2rem;
   margin: 0;
   text-align: justify;
-
 }
 
 .job-description li {
   margin-bottom: 0.8rem;
   line-height: 1.6;
-  color: var(--text, #1a1a1a);
+  color: var(--text);
 }
