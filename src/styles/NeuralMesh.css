@@ -5,7 +5,9 @@
   z-index: 2;
   position: relative;
   pointer-events: none;
-  opacity: 0.8;
+  opacity: 0.85;
+  padding-bottom: 3em;
+  background-color: transparent; /* or a dark bg color if needed */
 }
 
 canvas {

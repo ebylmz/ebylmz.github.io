@@ -1,21 +1,20 @@
 :root {
-  --background: #f7f9fc;
-  --text: #1a1a1a;
-  --border: #ccc;
-  --primary: #007acc;
-  --white: #fff;
-  --gray: #666;
-  --light-gray: #f4f6f8;
-  --light-gray-hower: #e8f1f9;
-}
+  /* Backgrounds */
+  --color-bg-default: #0d1117;        /* Darker black-blue (GitHub dark) */
+  --color-bg-surface: #161b22;        /* Slightly lighter panel */
+  --color-bg-hover: #21262d;          /* Hover surface */
 
-/* :root {
-  --text: #f7f9fc;
-  --background: #0F0F0F;
-  --primary: #007acc;
-  --gray: #666;
-  --white: #fff;
-} */
+  /* Text */
+  --color-text-primary: #c9d1d9;      /* Soft off-white (lighter gray-blue) */
+  --color-text-muted: #8b949e;        /* Muted gray with blue hint */
+
+  /* Borders & Dividers */
+  --color-border-default: #30363d;    /* Soft dark gray */
+
+  /* Accent / Brand */
+  --color-primary: #58a6ff;           /* Vibrant but soft blue */
+  --color-primary-hover: #1f6feb;     /* Darker blue hover */
+}
 
 * {
   margin: 0;
@@ -30,13 +29,13 @@ html {
 
 body {
   font-family: 'Inter', sans-serif;
-  background: var(--background);
-  color: var(--text);
+  background: var(--color-bg-default);
+  color: var(--color-text-primary);
   line-height: 1.6;
 }
 
 a {
-  color: var(--primary);
+  color: var(--color-primary);
   text-decoration: none;
 }
 
@@ -50,23 +49,23 @@ a {
 }
 
 .button.primary {
-  background: var(--primary);
-  color: white;
+  background: var(--color-primary);
+  color: var(--color-bg-default);
 }
 
 .button.primary:hover {
-  background: #005fa3;
+  background: var(--color-primary-hover);
 }
 
 .button.outline {
-  border: 1px solid var(--primary);
-  color: var(--primary);
+  border: 1px solid var(--color-primary);
+  color: var(--color-primary);
   background: transparent;
 }
 
 .button.outline:hover {
-  background: var(--primary);
-  color: white;
+  background: var(--color-primary);
+  color: var(--color-bg-default);
 }
 
 main {
@@ -84,7 +83,7 @@ main {
 .section-header h2 {
   font-size: 2.5rem;
   font-weight: 600;
-  color: var(--text);
+  color: var(--color-text-primary);
   white-space: nowrap;
   margin-bottom: 2rem;
   font-family: monospace;
@@ -94,7 +93,7 @@ main {
   content: "";
   flex-grow: 1;
   height: 1px;
-  background-color: var(--border);
+  background-color: var(--color-border-default);
   margin-left: 1rem;
   opacity: 0.5;
 }

@@ -15,7 +15,7 @@
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
-  background-color: var(--light-gray); /* subtle contrast */
+  background-color: var(--color-bg-surface); /* subtle contrast */
   border-radius: 12px;
   padding: 1.5rem;
   transition: transform 0.2s ease, background-color 0.2s ease;
@@ -23,7 +23,7 @@
 }
 
 .projects-card:hover {
-  background-color: var(--light-gray-hower); /* hover effect */
+  background-color: var(--color-bg-hover); /* hover effect */
   transform: translateY(-6px);
 }
 
@@ -35,29 +35,29 @@
 }
 
 .folder-icon {
-  color: var(--primary);
+  color: var(--color-primary);
 }
 
 .github-icon, .open-icon {
   margin: 0 0.5rem;
-  color: var(--text);
+  color: var(--color-text-primary);
   transition: color 0.2s;
 }
 
 .github-icon:hover, .open-icon:hover {
-  color: var(--primary);
+  color: var(--color-primary);
 }
 
 .card-title {
   font-size: 1.1rem;
   font-weight: bold;
-  color: var(--text);
+  color: var(--color-text-primary);
   margin-bottom: 0.5rem;
 }
 
 .card-desc {
   font-size: 0.95rem;
-  color: var(--gray);
+  color: var(--color-text-muted);
   flex-grow: 1;
   margin-bottom: 0.5rem;
 }
@@ -65,7 +65,7 @@
 .card-tech {
   font-size: 0.85rem;
   font-style: italic;
-  color: var(--primary);
+  color: var(--color-primary);
   margin-top: auto;
 }
 

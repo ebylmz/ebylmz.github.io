@@ -11,18 +11,18 @@ export default function About() {
     'React.js',
   ]
 
-  const paragraphOne = (
-    <p>
-      I'm a machine learning engineer and current Master's student in Computer Science, specializing in <b>3D vision</b> and <b>spatial intelligence</b>.
-    </p>
-  )
+const paragraphOne = (
+  <p>
+    I'm a machine learning engineer and currently pursuing my Master's in Computer Science, focusing on <b>3D vision</b> and <b>spatial intelligence</b>.
+  </p>
+)
 
-  const paragraphTwo = (
-    <p>
-      At the moment, I'm conducting research on <b>6-DoF pose estimation</b> for my master's thesis—a project I find deeply exciting due to its relevance to <b>3D vision, robotics,</b> and <b>autonomous systems</b>. 
-      Outside of AI, I also enjoy working on <b>full-stack web development</b> and crafting data-driven tools that are intuitive and efficient.
-    </p>
-  )
+const paragraphTwo = (
+  <p>
+    Right now, I'm working on my master's thesis research about <b>6-DoF pose estimation</b>. I find this topic really exciting because it plays a key role in <b>3D vision</b>, <b>robotics</b>, and <b>autonomous systems</b>.
+  </p>
+)
+
 
   return (
     <section id="about">

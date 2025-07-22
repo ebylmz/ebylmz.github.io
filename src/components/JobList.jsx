@@ -81,28 +81,28 @@ export default function JobList() {
         ))}
       </Tabs>
 
-    {companies.map((company, i) => (
-      value === i && (
-        <Box key={company} sx={{ padding: '1rem', flex: 1 }}>
-          {experienceData[company].map((role, idx) => (
-            <div key={idx} className="job-entry">
-              <div className="joblist-job-title">
-                {role.jobTitle}
-                <span className="joblist-job-company"> {company}</span>
+      {companies.map((company, i) =>
+        value === i && (
+          <Box key={company} sx={{ padding: '1rem', flex: 1 }}>
+            {experienceData[company].map((role, idx) => (
+              <div key={idx} className="job-entry">
+                <div className="joblist-job-title">
+                  {role.jobTitle}
+                  <span className="joblist-job-company"> {company}</span>
+                </div>
+                <div className="joblist-duration">{role.duration}</div>
+                <ul className="job-description">
+                  {role.desc.map((point, j) => (
+                    <FadeInSection key={j} delay={`${j * 100}ms`}>
+                      <li className="job-description-item">{point}</li>
+                    </FadeInSection>
+                  ))}
+                </ul>
               </div>
-              <div className="joblist-duration">{role.duration}</div>
-              <ul className="job-description">
-                {role.desc.map((point, j) => (
-                  <FadeInSection key={j} delay={`${j * 100}ms`}>
-                    <li>{point}</li>
-                  </FadeInSection>
-                ))}
-              </ul>
-            </div>
-          ))}
-        </Box>
-      )
-    ))}
+            ))}
+          </Box>
+        )
+      )}
 
     </Box>
   )

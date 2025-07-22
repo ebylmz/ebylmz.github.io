@@ -8,27 +8,36 @@
   font-size: 1.1rem;
   font-weight: 500;
   margin-bottom: 0.2rem;
-  color: var(--text);
+  color: var(--color-text-primary);
 }
 
 .joblist-job-company {
-  color: var(--primary);
+  color: var(--color-primary);
 }
 
 .joblist-duration {
   font-size: 0.9rem;
-  color: var(--gray);
+  color: var(--color-text-muted);
   margin-bottom: 1rem;
 }
 
 .job-description {
-  padding-left: 1.2rem;
   margin: 0;
+  padding-left: 1.5rem; /* space for bullet */
   text-align: justify;
 }
 
-.job-description li {
+.job-description-item {
+  position: relative;
   margin-bottom: 0.8rem;
   line-height: 1.6;
-  color: var(--text);
+  color: var(--color-text-primary);
+  list-style: none; /* removes default bullet */
+}
+
+.job-description-item::before {
+  content: '▹';
+  position: absolute;
+  left: -1.2rem; /* pull custom bullet into view */
+  color: var(--color-primary);
 }
