@@ -1,26 +1,36 @@
 :root {
   /* Backgrounds */
-  --color-bg-default: #0d1117;        /* Darker black-blue (GitHub dark) */
-  --color-bg-surface: #161b22;        /* Slightly lighter panel */
-  --color-bg-hover: #21262d;          /* Hover surface */
+  --color-bg-default: #0d1117;
+  /* Darker black-blue (GitHub dark) */
+  --color-bg-surface: #161b22;
+  /* Slightly lighter panel */
+  --color-bg-hover: #21262d;
+  /* Hover surface */
 
   /* Text */
-  --color-text-primary: #c9d1d9;      /* Soft off-white (lighter gray-blue) */
-  --color-text-muted: #8b949e;        /* Muted gray with blue hint */
+  --color-text-primary: #c9d1d9;
+  /* Soft off-white (lighter gray-blue) */
+  --color-text-muted: #8b949e;
+  /* Muted gray with blue hint */
 
   /* Borders & Dividers */
-  --color-border-default: #30363d;    /* Soft dark gray */
+  --color-border-default: #30363d;
+  /* Soft dark gray */
 
   /* Accent / Brand */
-  --color-primary: #58a6ff;           /* Vibrant but soft blue */
-  --color-primary-hover: #1f6feb;     /* Darker blue hover */
+  --color-primary: #58a6ff;
+  /* Vibrant but soft blue */
+  --color-primary-hover: #1f6feb;
+  /* Darker blue hover */
 }
 
-* {
+/* ===== Reset ===== */
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  scroll-behavior: smooth;
 }
 
 html {
@@ -28,52 +38,40 @@ html {
 }
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   background: var(--color-bg-default);
   color: var(--color-text-primary);
   line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 a {
   color: var(--color-primary);
   text-decoration: none;
+  transition: color 0.2s ease;
 }
 
-.button {
-  padding: 10px 16px;
-  border-radius: 4px;
-  font-weight: 500;
-  transition: all 0.3s ease;
-  font-size: 0.95rem;
-  text-decoration: none;
+a:hover {
+  color: var(--color-primary-hover);
 }
 
-.button.primary {
-  background: var(--color-primary);
-  color: var(--color-bg-default);
+ul {
+  list-style: none;
 }
 
-.button.primary:hover {
-  background: var(--color-primary-hover);
-}
-
-.button.outline {
-  border: 1px solid var(--color-primary);
-  color: var(--color-primary);
-  background: transparent;
-}
-
-.button.outline:hover {
-  background: var(--color-primary);
-  color: var(--color-bg-default);
-}
-
+/* ===== Layout ===== */
 main {
-  max-width: 1200px;
-  margin: 3rem auto;
-  padding: 0 1.2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
 }
 
+section {
+  scroll-margin-top: 80px;
+}
+
+/* ===== Section Header ===== */
 .section-header {
   display: flex;
   align-items: center;
@@ -81,12 +79,12 @@ main {
 }
 
 .section-header h2 {
-  font-size: 2.5rem;
+  font-size: 1.6rem;
   font-weight: 600;
   color: var(--color-text-primary);
   white-space: nowrap;
-  margin-bottom: 2rem;
-  font-family: monospace;
+  margin-bottom: 0;
+  font-family: 'Inter', monospace;
 }
 
 .section-header::after {
@@ -94,10 +92,11 @@ main {
   flex-grow: 1;
   height: 1px;
   background-color: var(--color-border-default);
-  margin-left: 1rem;
+  margin-left: 1.5rem;
   opacity: 0.5;
 }
 
+/* ===== Fade-in animation ===== */
 .fade-in-section {
   opacity: 0;
   transform: translateY(20px);
@@ -107,4 +106,22 @@ main {
 .fade-in-section.is-visible {
   opacity: 1;
   transform: none;
+}
+
+/* ===== Scrollbar (subtle) ===== */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-bg-default);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-border-default);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-text-muted);
 }

@@ -1,27 +1,30 @@
 #education {
-  padding: 5rem 1.5rem;
-  margin: 0 auto;
+  padding: 5rem 0;
 }
 
 .education-entry {
   margin-bottom: 2rem;
-  text-align: left;
 }
 
 .education-entry h3 {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
   color: var(--color-text-primary);
   margin-bottom: 0.2rem;
 }
 
 .edu-meta {
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   color: var(--color-primary);
   margin-bottom: 0.4rem;
 }
 
+.edu-meta span {
+  color: var(--color-text-muted);
+}
+
 .edu-details {
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   color: var(--color-text-muted);
   line-height: 1.5;
 }

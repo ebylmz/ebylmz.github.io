@@ -1,4 +1,4 @@
-# 🧠 Emirkan Burak Yılmaz — Portfolio
+# 🧠 Emirkan Burak Yilmaz — Portfolio
 
 Welcome to my personal portfolio website! This site showcases my background, projects, publications, and experience in the field of computer science.
 
@@ -23,16 +23,29 @@ Welcome to my personal portfolio website! This site showcases my background, pro
 
 ### Prerequisites
 
-Make sure you have [Node.js](https://nodejs.org/) and [npm](https://www.npmjs.com/) installed.
+- Node.js 18 or later
+- npm 10 or later
 
 ### Installation
 
 ```bash
+# 1. Clone the repository
 git clone https://github.com/ebylmz/ebylmz.github.io.git
+
+# 2. Move into the project directory
 cd ebylmz.github.io
+
+# 3. Create the environment with Node.js from the conda-forge channel
+conda create -n my-website -c conda-forge nodejs -y
+
+# 4. Activate your new environment
+conda activate my-website
+
+# 5. Install dependencies
 npm install
+
+# 6. Start the local development server
 npm run dev
-Visit http://localhost:5173 in your browser.
 ```
 
 

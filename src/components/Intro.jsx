@@ -1,35 +1,46 @@
-import { TypeAnimation } from 'react-type-animation';
-import EmailRoundedIcon from "@mui/icons-material/EmailRounded";
-import FadeInSection from "./FadeInSection";
-import NeuralMesh from "./NeuralMesh";
-import "../styles/Intro.css";
+import { TypeAnimation } from 'react-type-animation'
+import EmailRoundedIcon from '@mui/icons-material/EmailRounded'
+import FadeInSection from './FadeInSection'
+import '../styles/Intro.css'
 
 export default function Intro() {
   return (
     <section id="intro">
-      <NeuralMesh />
-      <h1 className="intro-title">
-        <TypeAnimation
-          sequence={['hi, Emirkan here.', 1000]}
-          speed={50}
-          cursor={true}
-          repeat={0}
-          style={{ display: 'inline-block' }}
-        />
-      </h1>
-      <FadeInSection>
-        <h2 className="intro-subtitle">
-          I love solving real-world problems.
-        </h2>
+      <div className="intro-content">
+        <h1 className="intro-title">
+          hi, I'm{' '}
+          <span className="intro-name">Emirkan</span>.
+        </h1>
 
-        <p className="intro-desc">
-          I'm a computer engineer based in Istanbul, Turkey, with a deep passion for AI. My focus lies in developing innovative solutions especially in the field of computer vision.
-        </p>
+        <div className="intro-typed">
+          <TypeAnimation
+            sequence={[
+              'I love matrices, images, videos.',
+              2000,
+              'I build neural systems for computer vision.',
+              2000,
+              'My research involves 3D vision and spatial intelligence.',
+              2000,
+            ]}
+            speed={50}
+            cursor={true}
+            repeat={Infinity}
+            style={{ display: 'inline-block' }}
+          />
+        </div>
 
-        <a href="mailto:emirkan.b.yilmaz@gmail.com" className="intro-contact">
-          <EmailRoundedIcon /> Say hi!
-        </a>
-      </FadeInSection>
+        <FadeInSection>
+          <p className="intro-desc">
+            Research assistant and master's student in Computer Engineering
+            at Gebze Technical University, focused on making machines
+            understand and interact with the 3D world.
+          </p>
+
+          <a href="mailto:emirkan.b.yilmaz@gmail.com" className="intro-contact">
+            <EmailRoundedIcon fontSize="small" /> Say hi
+          </a>
+        </FadeInSection>
+      </div>
     </section>
-  );
+  )
 }

@@ -1,22 +1,88 @@
-.navbar {
-  background-color: var(--color-bg-default);
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-  font-weight: bold;
-  padding: 0.6rem 1.2rem;
-}
-
-.navbar .nav-link {
-  color: var(--color-text-primary) !important;;
-  margin-right: 1rem;
-  transition: color 0.2s;
-}
-
-.navbar .nav-link:hover {
-  color: var(--color-primary) !important;; 
-}
-
-.navbar .navbar-brand {
+/* ===== Brand ===== */
+.navbar-brand {
+  font-weight: 600;
+  font-size: 1.1rem;
   color: var(--color-text-primary);
-  font-weight: bold;
-  font-size: 1.2rem;
+  text-decoration: none;
+  letter-spacing: -0.02em;
+}
+
+.navbar-brand:hover {
+  color: var(--color-primary);
+}
+
+/* ===== Desktop Links ===== */
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.nav-link {
+  color: var(--color-text-muted);
+  font-size: 0.85rem;
+  font-weight: 500;
+  padding: 0.4rem 0.7rem;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: color 0.2s, background-color 0.2s;
+}
+
+.nav-link:hover {
+  color: var(--color-primary);
+  /* background-color: var(--color-bg-hover); */
+}
+
+/* ===== Social Icons ===== */
+.navbar-social {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  margin-left: 1rem;
+  padding-left: 1rem;
+  border-left: 1px solid var(--color-border-default);
+}
+
+.social-icon {
+  color: var(--color-text-muted);
+  display: flex;
+  align-items: center;
+  padding: 0.35rem;
+  border-radius: 6px;
+  transition: color 0.2s, background-color 0.2s;
+}
+
+.social-icon:hover {
+  color: var(--color-primary);
+  /* background-color: var(--color-bg-hover); */
+}
+
+/* ===== Mobile Drawer ===== */
+.drawer-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.drawer-link {
+  color: var(--color-text-muted);
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: color 0.2s, background-color 0.2s;
+}
+
+.drawer-link:hover {
+  color: var(--color-text-primary);
+  background-color: var(--color-bg-hover);
+}
+
+.drawer-social {
+  display: flex;
+  gap: 0.5rem;
+  padding: 1.5rem 1rem;
+  margin-top: auto;
+  border-top: 1px solid var(--color-border-default);
 }
