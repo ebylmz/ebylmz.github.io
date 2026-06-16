@@ -1,11 +1,16 @@
 import { TypeAnimation } from 'react-type-animation'
 import EmailRoundedIcon from '@mui/icons-material/EmailRounded'
 import FadeInSection from './FadeInSection'
+import PointCloudPortrait from './PointCloudPortrait'
 import '../styles/Intro.css'
 
 export default function Intro() {
   return (
     <section id="intro">
+      <div className="intro-portrait">
+        <PointCloudPortrait imageSrc="/assets/intro_portrait.png" />
+      </div>
+
       <div className="intro-content">
         <h1 className="intro-title">
           hi, I'm{' '}
