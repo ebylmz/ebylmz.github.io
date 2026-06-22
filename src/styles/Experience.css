@@ -24,6 +24,7 @@
 .job-description {
   margin: 0;
   padding-left: 1.5rem;
+  text-align: justify;
 }
 
 .job-description-item {

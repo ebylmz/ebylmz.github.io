@@ -21,15 +21,9 @@ export default function About() {
         <div className="about-content">
           <div className="about-description">
             <p>
-              I am a research assistant and master's student in Computer
-              Engineering at Gebze Technical University.
-              My research focuses on <b>3D vision</b>, <b>spatial
-                intelligence</b>, and <b>zero-shot 6-DoF pose estimation for
-                  unseen objects</b>.
-            </p>
-
-            <p>
-              Outside the lab, I enjoy building side projects, doing sports, and travelling to discover new places.
+              I am a Master's student and Research Assistant in Computer Engineering at <b>Gebze Technical University</b>.
+              My research specializes in <b>zero-shot 6DoF pose estimation</b> for unseen objects.
+              Previously, I worked as a Machine Learning Engineer in the bioinformatics field, where I designed and developed graph neural networks for gene-disease prioritization.
             </p>
 
             <p className="about-tech-label">Technologies I work with:</p>
@@ -40,6 +34,11 @@ export default function About() {
                 </FadeInSection>
               ))}
             </div>
+
+            <p>
+              Outside of work, I love exploring new places and meeting new people.
+              You don't know what you don't know, and every journey expands my perspective on the world and my place within it.
+            </p>
           </div>
 
           <div className="about-image">

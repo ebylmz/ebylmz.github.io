@@ -17,7 +17,7 @@ export default function Intro() {
           <span className="intro-name">Emirkan</span>.
         </h1>
 
-        <div className="intro-typed">
+        {/* <div className="intro-typed">
           <TypeAnimation
             sequence={[
               'I love matrices, images, videos.',
@@ -32,13 +32,12 @@ export default function Intro() {
             repeat={Infinity}
             style={{ display: 'inline-block' }}
           />
-        </div>
+        </div> */}
 
         <FadeInSection>
           <p className="intro-desc">
-            Research assistant and master's student in Computer Engineering
-            at Gebze Technical University, focused on making machines
-            understand and interact with the 3D world.
+            Machine Learning engineer and researcher in Istanbul, Turkey.
+            I specialize in 3D Computer Vision and interested in building world models that can reason about space and objects.
           </p>
 
           <a href="mailto:emirkan.b.yilmaz@gmail.com" className="intro-contact">

@@ -12,6 +12,7 @@
 .about-description {
   flex: 1;
   min-width: 280px;
+  text-align: justify;
 }
 
 .about-description p {

@@ -10,6 +10,7 @@
 
 .publication-list li {
   margin-bottom: 1rem;
+  text-align: justify;
 }
 
 .publication-list a {

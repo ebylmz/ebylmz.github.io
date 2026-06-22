@@ -7,20 +7,20 @@ import FadeInSection from './FadeInSection'
 const projects = [
   {
     title: 'Fast Neural Style Transfer',
-    description: 'Feedforward Neural Style Transfer using perceptual loss.',
+    description: 'Real-time neural style transfer using feedforward neural networks.',
     tech: 'Python, PyTorch',
     github: 'https://github.com/ebylmz/fast-neural-style-transfer',
     live: 'https://huggingface.co/spaces/ebylmz/fast-neural-style-transfer'
   },
   {
-    title: 'Architectural Style Classification',
-    description: 'CNN-based classification of Turkish architects.',
+    title: 'Architectural Styles',
+    description: 'Classification of Turkish architects using ConvNets.',
     tech: 'Python, TensorFlow, Keras, scikit-learn',
     github: 'https://github.com/ebylmz/arch-style-classification'
   },
   {
     title: 'GTUCAD',
-    description: 'A CAD Library for drawing and manipulating 2D shapes.',
+    description: 'A CAD library for drawing and manipulating 2D shapes.',
     tech: 'C, PostScript',
     github: 'https://github.com/ebylmz/GTUCAD'
   },
@@ -32,7 +32,7 @@ const projects = [
   },
   {
     title: 'Turkish N-Gram Language Model',
-    description: 'Syllable-based n-gram models with Good-Turing smoothing.',
+    description: 'Syllable-based n-gram language models for Turkish language text generation.',
     tech: 'Python, NLTK',
     github: 'https://github.com/ebylmz/turkish-ngram-model'
   },
