@@ -8,6 +8,27 @@
   gap: 4vw;
 }
 
+/* ===== Intro Image ===== */
+.intro-image {
+  flex-shrink: 0;
+  max-width: 300px;
+  width: 100%;
+}
+
+.intro-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.intro-image img:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.4);
+}
+
 /* ===== Point Cloud Portrait ===== */
 .intro-portrait {
   display: flex;
@@ -101,6 +122,10 @@
 
   .intro-desc {
     text-align: center;
+  }
+
+  .intro-image {
+    max-width: 220px;
   }
 }
 

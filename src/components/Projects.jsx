@@ -1,10 +1,16 @@
 import '../styles/Projects.css'
 import GitHubIcon from '@mui/icons-material/GitHub'
-import LaunchIcon from '@mui/icons-material/Launch'
+import PlayCircleIcon from '@mui/icons-material/PlayCircle';
 import FolderOpenRoundedIcon from '@mui/icons-material/FolderOpenRounded'
 import FadeInSection from './FadeInSection'
 
 const projects = [
+  {
+    title: 'PnP-Transformer',
+    description: 'A Neural Pose Solver for Zero-Shot 6D Object Pose Estimation.',
+    tech: 'Python, PyTorch',
+    github: 'https://github.com/ebylmz/pnp-transformer'
+  },
   {
     title: 'Fast Neural Style Transfer',
     description: 'Real-time neural style transfer using feedforward neural networks.',
@@ -13,9 +19,15 @@ const projects = [
     live: 'https://huggingface.co/spaces/ebylmz/fast-neural-style-transfer'
   },
   {
+    title: 'micrograd',
+    description: 'A tiny scalar-valued autograd engine and a neural net library.',
+    tech: 'Python',
+    github: 'https://github.com/ebylmz/micrograd'
+  },
+  {
     title: 'Architectural Styles',
     description: 'Classification of Turkish architects using ConvNets.',
-    tech: 'Python, TensorFlow, Keras, scikit-learn',
+    tech: 'Python, TensorFlow, Keras',
     github: 'https://github.com/ebylmz/arch-style-classification'
   },
   {
@@ -23,18 +35,6 @@ const projects = [
     description: 'A CAD library for drawing and manipulating 2D shapes.',
     tech: 'C, PostScript',
     github: 'https://github.com/ebylmz/GTUCAD'
-  },
-  {
-    title: 'Interactive AR Application',
-    description: 'Interactive AR experiences, featuring dynamic scenarios and real-world object interactions.',
-    tech: 'C#, Unity, Vuforia',
-    github: 'https://github.com/ebylmz/interactive-ar-experience'
-  },
-  {
-    title: 'Turkish N-Gram Language Model',
-    description: 'Syllable-based n-gram language models for Turkish language text generation.',
-    tech: 'Python, NLTK',
-    github: 'https://github.com/ebylmz/turkish-ngram-model'
   },
   {
     title: 'GTU Assignments',
@@ -64,7 +64,7 @@ export default function Projects() {
                   </a>
                   {proj.live && (
                     <a href={proj.live} target="_blank" rel="noopener noreferrer" className="open-icon">
-                      <LaunchIcon />
+                      <PlayCircleIcon />
                     </a>
                   )}
                 </div>

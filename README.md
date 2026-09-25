@@ -1,4 +1,4 @@
-# 🧠 Emirkan Burak Yilmaz — Portfolio
+# Emirkan Burak Yilmaz — Portfolio
 
 Welcome to my personal portfolio website! This site showcases my background, projects, publications, and experience in the field of computer science.
 
@@ -11,7 +11,7 @@ Welcome to my personal portfolio website! This site showcases my background, pro
 
 
 
-## 🛠️ Built With
+## Built With
 
 - [React](https://reactjs.org/)
 - [Vite](https://vitejs.dev/)
@@ -19,7 +19,7 @@ Welcome to my personal portfolio website! This site showcases my background, pro
 - [React Bootstrap](https://react-bootstrap.github.io/)
 
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -49,7 +49,7 @@ npm run dev
 ```
 
 
-### 📦 Deployment
+## Deployment
 ```bash
 npm run build
 npm run deploy
@@ -64,5 +64,5 @@ export default defineConfig({
 ```
 
 
-## 📜 License
+## License
 This project is open-source and free to use. If you find it helpful or inspiring, feel free to star, fork or contribute!

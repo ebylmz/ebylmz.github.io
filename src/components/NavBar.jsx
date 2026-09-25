@@ -9,15 +9,16 @@ import Box from '@mui/material/Box'
 import EmailRoundedIcon from '@mui/icons-material/EmailRounded'
 import LinkedInIcon from '@mui/icons-material/LinkedIn'
 import GitHubIcon from '@mui/icons-material/GitHub'
+import BookmarkIcon from '@mui/icons-material/Bookmark';
 import useMediaQuery from '@mui/material/useMediaQuery'
 import '../styles/NavBar.css'
 
 const navLinks = [
   { label: 'Home', href: '#intro' },
   { label: 'About', href: '#about' },
-  { label: 'Experience', href: '#experience' },
   { label: 'Education', href: '#education' },
   { label: 'Publications', href: '#publications' },
+  { label: 'Experience', href: '#experience' },
   { label: 'Projects', href: '#projects' },
 ]
 
@@ -25,6 +26,7 @@ const socialLinks = [
   { icon: <EmailRoundedIcon fontSize="small" />, href: 'mailto:emirkan.b.yilmaz@gmail.com', label: 'Email', external: false },
   { icon: <GitHubIcon fontSize="small" />, href: 'https://github.com/ebylmz', label: 'GitHub', external: true },
   { icon: <LinkedInIcon fontSize="small" />, href: 'https://linkedin.com/in/emirkanburakyilmaz', label: 'LinkedIn', external: true },
+  { icon: <BookmarkIcon fontSize="small" />, href: 'https://substack.com/@ebyilmaz', label: 'Substack', external: true },
 ]
 
 export default function NavBar() {

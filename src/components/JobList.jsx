@@ -16,9 +16,9 @@ const experienceData = {
         duration: 'Dec 2025 – Present',
         location: 'Kocaeli, Turkey',
         desc: [
-          'Designed and implemented a zero-shot 6DoF object pose estimation pipeline using transformer-based architectures in PyTorch.',
-          'Achieved 49.8% Average Recall (AR) across 5 core datasets of the BOP Benchmark.',
-          'Led problem-solving sessions and assisted with assessments for Linear Algebra and Numerical Analysis courses.'
+          'Developed a zero-shot 6D object pose estimation pipeline integrating vision transformer-based correspondence matching with neural pose recovery.',
+          'Achieved 41.2\% AR using the neural solver and 52.2\% AR using RANSAC on the BOP benchmark, ranking second overall on the leaderboard while running roughly 2x faster than the top performer.',
+          'Led weekly problem-solving sessions, prepared assessments for Linear Algebra and Numerical Analysis courses.'
         ]
       }
     ]
@@ -31,9 +31,9 @@ const experienceData = {
         duration: 'Feb 2024 – Apr 2025',
         location: 'Kocaeli, Turkey',
         desc: [
-          'Managed medical data collection and preprocessing workflows.',
-          'Developed Graph Neural Network (GNN) models for phenotype-driven gene and disease prioritization, achieving a Top-10 accuracy of 60%.',
-          'Performed hyperparameter tuning and model evaluation using Weights & Biases.'
+          'Constructed a biomedical knowledge graph with ~1M edges, integrating phenotype, gene, disease, and patient data extracted from HPO and ClinVar databases using NumPy and Pandas.',
+          'Developed Graph Neural Network (GNN) models using PyTorch Geometric for phenotype-driven gene/disease prioritization, achieving 36% Top-10 accuracy.',
+          'Developed an SVM model for variant of uncertain significance (VUS) characterization using biomedical features, achieving 97% accuracy on ~12K patient records.',
         ]
       }
     ]
@@ -46,9 +46,9 @@ const experienceData = {
         duration: 'Jun 2023 – Sep 2023',
         location: 'Maastricht, Netherlands',
         desc: [
-          "Extracted and structured medical data from FDA's DailyMed SPL drug labels to build a specialized NER dataset.",
-          'Trained spaCy-based Named Entity Recognition models, achieving an F1-score of 0.61.',
-          'Benchmarked model performance against large language models (LLMs) for efficiency and accuracy.'
+          'Constructed a biomedical Named Entity Recognition (NER) dataset by extracting structured information from FDA DailyMed SPL drug labels.',
+          'Developed NER models for biomedical entity extraction using spaCy, achieving an F1 score of 0.61.',
+          'Benchmarked model performance against large language models (LLMs) for efficiency and accuracy.',
         ]
       }
     ]

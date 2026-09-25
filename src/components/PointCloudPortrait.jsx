@@ -1,8 +1,8 @@
 import { useRef, useEffect, useState, useCallback } from 'react'
 
 const PARTICLE_COLOR = { r: 88, g: 166, b: 255 } // --color-primary
-const MOUSE_RADIUS = 40
-const RETURN_SPEED = 0.004
+const MOUSE_RADIUS = 30
+const RETURN_SPEED = 0.01
 const SCATTER_FORCE = 8
 
 const calculateSize = (width) => {

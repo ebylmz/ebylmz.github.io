@@ -1,19 +1,25 @@
 import { TypeAnimation } from 'react-type-animation'
 import EmailRoundedIcon from '@mui/icons-material/EmailRounded'
 import FadeInSection from './FadeInSection'
-import PointCloudPortrait from './PointCloudPortrait'
+// import PointCloudPortrait from './PointCloudPortrait'
+import profileImg from '/assets/my_photo_intro.jpeg'
 import '../styles/Intro.css'
 
 export default function Intro() {
   return (
     <section id="intro">
-      <div className="intro-portrait">
+      {/* <div className="intro-portrait">
         <PointCloudPortrait imageSrc="/assets/intro_portrait.png" />
+      </div> */}
+
+      <div className="intro-image">
+        <img src={profileImg} alt="Emirkan Burak Yilmaz" loading="lazy" />
       </div>
+
 
       <div className="intro-content">
         <h1 className="intro-title">
-          hi, I'm{' '}
+          Hi, I'm{' '}
           <span className="intro-name">Emirkan</span>.
         </h1>
 
@@ -36,8 +42,7 @@ export default function Intro() {
 
         <FadeInSection>
           <p className="intro-desc">
-            Machine Learning engineer and researcher in Istanbul, Turkey.
-            I specialize in 3D Computer Vision and interested in building world models that can reason about space and objects.
+            MSc researcher in computer vision working on 6D object pose estimation, with an interest in spatial intelligence and world models.
           </p>
 
           <a href="mailto:emirkan.b.yilmaz@gmail.com" className="intro-contact">
