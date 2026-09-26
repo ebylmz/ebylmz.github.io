@@ -28,7 +28,7 @@ const projects = [
     title: 'Architectural Styles',
     description: 'Classification of Turkish architects using ConvNets.',
     tech: 'Python, TensorFlow, Keras',
-    github: 'https://github.com/ebylmz/arch-style-classification'
+    github: 'https://github.com/ebylmz/architectural-style-classification'
   },
   {
     title: 'GTUCAD',
