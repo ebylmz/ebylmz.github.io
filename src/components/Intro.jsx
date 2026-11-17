@@ -42,7 +42,7 @@ export default function Intro() {
 
         <FadeInSection>
           <p className="intro-desc">
-            MSc researcher in computer vision working on 6D object pose estimation, with an interest in spatial intelligence and world models.
+            MSc researcher in computer vision working on 6DoF object pose estimation, with an interest in spatial intelligence and world models.
           </p>
 
           <a href="mailto:emirkan.b.yilmaz@gmail.com" className="intro-contact">
